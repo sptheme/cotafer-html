@@ -1,0 +1,56 @@
+{
+  "name": "cotafer-html",
+  "version": "1.0.0",
+  "description": "Browse hotel reviews and find the guaranteed best price on hotels with small amount of donation.",
+  "main": "index.js",
+  "scripts": {
+    "build": "set NODE_ENV=production&& webpack --config webpack.pro.config.js --progress --colors",
+    "dev": "set NODE_ENV=development&& node dev.server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sptheme/cotafer-html.git"
+  },
+  "keywords": [
+    "webpack",
+    "bootstrap",
+    "html",
+    "css",
+    "starter"
+  ],
+  "author": "Sopheak Peas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.0",
+    "ejs-loader": "^0.3.0",
+    "extract-loader": "^0.1.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "font-awesome-loader": "^1.0.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^3.13.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.27",
+    "webpack-dev-server": "^2.1.0-beta.12"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "jquery-hoverintent": "^1.8.2",
+    "sidr": "^2.2.1",
+    "superfish": "^1.7.9",
+    "tether": "^1.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sptheme/cotafer-html/issues"
+  },
+  "homepage": "https://github.com/sptheme/cotafer-html#readme"
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= require('html-loader!./partials/header/head.html') %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <%= require('html-loader!./partials/header/g-fonts.html') %>
+</head>
+<body class="homepage">
+  <div id="page" class="hfeed site">
+    <div class="cover">
+      <span class="background-overlay"></span>
+      <div class="cover-container">
+        <div class="cover-inner">
+
+          <header id="masthead" class="site-header masthead" role="banner">
+            <div class="container-fluid">
+              <nav class="navbar navbar-toggleable-md">
+                <div class="navbar-brand mr-sm-0 mr-md-5">
+                  <%= require('html-loader!./partials/header/header-logo.html') %>
+                </div> <!-- .site-branding -->
+
+                <div class="collapse navbar-collapse justify-content-end hidden-md-down">
+                  <%= require('html-loader!./partials/header/header-navigation.html') %>
+                </div> <!-- .navbar-collapse -->
+
+                <div class="navbar-toggler">
+                  <%= require('html-loader!./partials/header/header-mobile-menu-icon.html') %>
+                </div> <!-- .navbar-toggler -->
+
+              </nav> <!-- .navbar -->
+            </dv> <!-- .container-fluid -->
+          </header> <!-- #header -->
+
+          <div class="container cover-content">
+            <header class="cover-header">
+              <h1>Start your experience today</h1>
+              <p class="lead">Cotafer guarantees the best prices for any type of property, from small, family-run bed, apartments and five-star luxury suites  from both the leisure and business sectors worldwide.</p>
+            </header> <!-- .cover-header -->
+            <%= require('html-loader!./partials/components/search.html') %>
+
+
+          </div> <!-- .container -->
+
+          <footer id="colophon" class="site-footer mastfoot" role="contentinfo">
+            <%= require('html-loader!./partials/footer/footer-site-info.html') %>
+          </footer> <!-- .site-footer -->
+
+        </div> <!-- .cover-inner -->
+      </div> <!-- .cover-container -->
+    </div> <!-- #cover -->
+  </div> <!-- #pager -->
+
+  <%= require('html-loader!./partials/components/menu-mobile-alt.html') %>
+
+  <%= require('html-loader!./partials/components/modal-signin.html') %>
+  <%= require('html-loader!./partials/components/modal-signup.html') %>
+
+</body>
+</html>
