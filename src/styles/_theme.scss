@@ -18,6 +18,11 @@ Version: 1.0.0
   ## Site tools
   ## Quick contact
   ## Site navigation
+# FOOTER
+# WIDGETS
+  ## Widget custom name
+# CONTENT
+  ## Meta post
 # TEMPLATE PAGES
   ## Homepage or landing page
 # COMPONENT
@@ -27,6 +32,7 @@ Version: 1.0.0
   ## Flag icons
   ## Modal signin & up
   ## Social sharing
+  ## Callout
 
 # DEVELOPMENT
 
@@ -43,6 +49,9 @@ h1, h2, h3, h4, h5, h6,
 /*--------------------------------------------------------------
 # ELEMENTS
 --------------------------------------------------------------*/
+body {
+  background: $gray-lightest;
+}
 a:hover {
   color: $link-hover-color;
 }
@@ -80,7 +89,7 @@ a:focus {
 # HEADER
 --------------------------------------------------------------*/
 .masthead {
-  background-color:$dark-blue;
+  background-color:$blue-dark;
   min-height:60px;
 }
 
@@ -133,6 +142,169 @@ a:focus {
   .active {
     color: #fff;
     border-bottom-color: #fff;
+  }
+}
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+.site-footer {
+  background: $white;
+  font-size: 85%;
+
+  a {
+    color: $gray-dark;
+  }
+  a:hover {
+    color: $link-hover-color;
+  }
+
+  .footer-widget {
+    padding:$spacer 0;
+
+    .widget {
+      border:none;
+      background: none;
+      box-shadow:none;
+
+      .nav-link {
+        padding: 0.250em 0.5em 0.250em 0;
+      }
+    }
+  }
+
+  .site-info {
+    padding-top: $spacer;
+    text-align: center;
+    border-top: 1px solid $gray-lighter;
+  }
+}
+
+/*--------------------------------------------------------------
+# WIDGETS
+--------------------------------------------------------------*/
+.widget {
+  border: 1px solid rgba($gray, 0.3);
+  background: $white;
+  box-shadow: 0 1px 1px rgba($black,.2);
+  border-radius: $border-radius;
+  padding: $spacer;
+  margin: 0 0 ($spacer * 2);
+
+  .widget-title {
+    font-size: 1.125em;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    width: 100%;
+  }
+
+  /* Widgets list item */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.children {
+    margin-left: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Wiget custom name
+--------------------------------------------------------------*/
+.widget-custom-name {
+  background:$blue-light;
+  color:$white;
+}
+
+/*--------------------------------------------------------------
+# CONTENT
+--------------------------------------------------------------*/
+.site-content {
+  padding: 1em 0;
+
+  /* Custom vertical space of grid's bootstrap */
+  .row+.row {
+    margin-top: 2em;
+  }
+
+  /* Vertical margin grid */
+  .row {
+    > .col,
+    > [class*="col-"] {
+      margin-bottom: 1em;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .row {
+      > .col,
+      > [class*="col-"] {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.main {
+  ul, ol {
+    padding-left: 1.5em;
+  }
+}
+
+.entry-title {
+  display: block;
+  font-size: 1.125em;
+  margin: 0 0 0.5em;
+}
+
+/*--------------------------------------------------------------
+## Single post
+--------------------------------------------------------------*/
+.single-post-title {
+  font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Meta post
+--------------------------------------------------------------*/
+ul.meta {
+  overflow: hidden;
+  font-size: 0.923em;
+  color: rgba($gray,.9);
+  list-style: none;
+  margin: 0 0 10px;
+  padding-left:0!important;
+
+  li {
+    float: left;
+    margin: 0 20px 5px 0;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  li .fa {
+    margin-right: 8px;
+  }
+
+  a {
+    color: rgba($gray,.9);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+  time {
+    display: inline;
   }
 }
 
@@ -195,12 +367,11 @@ html, body {
   .mastfoot {
     color:rgba(255,255,255,.7);
     width: 100%;
-    text-align: center;
     position: fixed;
     bottom: 0;
   }
   .mastfoot a {
-    color: $orange;
+    color: $link-hover-color;
   }
 }
 
@@ -252,7 +423,7 @@ html, body {
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: $dark-blue;
+  background-color: $blue-dark;
 
   .cf-menu-text {
     color: white;
@@ -492,8 +663,6 @@ html, body {
   }
 }
 
-
-
 @media (min-width:768px) {
   .search-container {
     background: #ffffff;
@@ -615,6 +784,30 @@ html, body {
   color:#ffffff;
 }
 
+/*--------------------------------------------------------------
+## Callout
+--------------------------------------------------------------*/
+/* Footer callout */
+.footer-callout-wrap {
+  text-align: center;
+  color: $white;
+  padding-bottom: ($spacer*2);
+  padding-top: ($spacer*2);
+  background: $blue-light;
+  .btn {
+    border-color: $white;
+    border-radius: $btn-border-radius-lg;
+    background:none;
+    color:$white;
+  }
+}
+@media (min-width:992px) {
+  .footer-callout-wrap {
+    .callout-inner {
+      width: 720px;
+    }
+  }
+}
 
 /*--------------------------------------------------------------
 # DEVELOPMENT

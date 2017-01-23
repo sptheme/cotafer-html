@@ -6,7 +6,7 @@
 
   <%= require('html-loader!./partials/header/g-fonts.html') %>
 </head>
-<body>
+<body class="left-sidebar">
   <div id="page" class="hfeed site">
       <header id="masthead" class="site-header masthead" role="banner">
         <div class="container-fluid">
@@ -31,22 +31,108 @@
         <div class="container">
           <div class="row">
 
-            <div id="primary" class="content-area col-md-8">
+            <div id="primary" class="content-area col-md-9">
               <main id="main" class="site-main" role="main">
-                <h1>Booking page</h1>
-                <p class="lead">Main content goes here...</h1>
+
+                <article class="widget single-post">
+                  <header class="single-post-header">
+                    <h1 class="single-post-title">The Mekong Dragon Boutique Hotel</h1>
+                    <ul class="meta">
+                      <li class="meta-address">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>No. 134, Street 51, Beoung Keng Kang I, Chamkar Mon, Phnom Penh, Cambodia</span>
+                      </li>
+                    </ul> <!-- .meta -->
+                  </header><!-- .project-single-header -->
+
+                  <div class="single-post-content">
+                    <p>The Mekong Dragon Hotel welcomes guests with an outdoor swimming pool, well-appointed rooms and free WiFi access. Phnom Penh International Airport is conveniently placed 9 km from the hotel.</p>
+                    <h5>Sub headline - Heading 5</h5>
+                    <p>Mekong Dragon Hotel is 1 km away from both Royal Palace Phnom Penh and Tuol Sleng Genocide Museum. The vibrant Riverfront Park is 2.1 km away. An airport transfer can be arranged at an additional cost.</p>
+                    <h6>Sub headline - Heading 6</h6>
+                    <p>Rooms are spacious and bright. Each is fitted with air conditioning, a mini-fridge and windows offering ample natural light. They also have a fresh bathroom equipped with a hairdryer and toiletries.</p>
+                    <p>Mekong Dragon Hotel houses a 24-hour front desk and an outdoor terrace where you can enjoy a relaxing cup of tea. It also offers traditional massages and laundry services. You can also rent a bicycle or a car to explore the area.</p>
+                    <p>Mekong Dragon’s in-house restaurant will serve both local Khmer-style dishes and popular Western delights. Alternatively, in-room dining options are possible as well. </p>
+                    <p>The Mekong Dragon Boutique Hotel has been welcoming Booking.com guests since 20 Aug 2014 Hotel Rooms: 42 <br>
+                    We speak your language!</p>
+                  </div> <!-- .entry -->
+                </article> <!-- .single-post -->
+
               </main> <!-- #main -->
             </div> <!-- #primary -->
 
-            <aside id="secondary" class="sidebar widget-area col-md-4" role="complementary">
-              <h2>All widget will goes here...</h2>
+            <aside id="secondary" class="sidebar widget-area col-md-3" role="complementary">
+              <div class="widget widget-custom-name">
+                <h4 class="widget-title">Widget A</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div> <!-- .widget -->
+
+              <div class="widget">
+                <h4 class="widget-title">Widget B</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              </div> <!-- .widget -->
             </aside> <!-- .widget-area -->
           </div> <!-- .row -->
         </div> <!-- .container -->
       </div> <!-- #content -->
 
+      <div class="footer-callout-wrap">
+        <div class="container callout-inner">
+          <h3 class="callout-title">YOUR GUEST ARE WAITING</h3>
+          <p>Whether you have a country home, a city apartment or seaside villa, Cotafer is the perfect place to list your property. There are absolutely no sign-up fees with 24hour support team.</p>
+          <a href="#" class="btn btn-secondary">Add your property</a>
+        </div> <!-- .container -->
+      </div> <!-- .footer-callout-wrap -->
+
       <footer id="colophon" class="site-footer mastfoot" role="contentinfo">
-        <%= require('html-loader!./partials/footer/footer-site-info.html') %>
+        <div class="footer-inner">
+          <div class="footer-widget">
+            <div class="container">
+              <div class="row">
+                <div class="widget widget-company-info col-md-6 mb-1">
+                  <h3 class="widget-title">Produced by</h3>
+                  <p>Cotafer is part of COTAFER FOUNDATION, the world leader in online donation.</p>
+                </div> <!-- .widget -->
+
+                <div class="widget col-md-2 col-sm-4 mb-1">
+                  <h3 class="widget-title">Cotafer</h3>
+                  <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Press</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Work for us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Advertising</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Conditions of Use</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Privacy Notice</a></li>
+                  </ul>
+                </div> <!-- .widget -->
+
+                <div class="widget col-md-2 col-sm-4 mb-1">
+                  <h3 class="widget-title">More Helps</h3>
+                  <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Helps</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Become a partner</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Become a traveller</a></li>
+                  </ul>
+                </div> <!-- .widget -->
+
+                <div class="widget col-md-2 col-sm-4 mb-1">
+                  <h3 class="widget-title">Top Destination</h3>
+                  <ul class="nav flex-column">
+                    <li class="nav-item"><a href="#" class="nav-link">Phnom Penh</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Baili</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Siem Reap</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Hong Kong</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Thailand</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tokyo</a></li>
+                  </ul>
+                </div> <!-- .widget -->
+              </div> <!-- .row -->
+            </div> <!-- .container -->
+          </div> <!-- .footer-widget -->
+
+          <%= require('html-loader!./partials/footer/footer-site-info.html') %>
+        </div> <!-- .footer-inner -->
       </footer> <!-- .site-footer -->
   </div> <!-- #pager -->
 
